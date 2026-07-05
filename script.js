@@ -29,7 +29,7 @@ if (producto) {
     });
 }
 
-total += precio * cantidad;
+total += precio;
 
     actualizarCarrito();
 }
@@ -44,7 +44,7 @@ function actualizarCarrito() {
         const li = document.createElement("li");
 
         li.innerHTML = `
-            ${item.nombre} x${item.cantidad} - ${item.precio * (item.cantidad / (item.nombre === "Carbón" ? 8 : item.nombre === "Hierro" ? 4 : 1))} pesos fuertes
+           ${item.nombre} x${item.cantidad} - ${item.precio} pesos fuertes
             <button onclick="eliminar(${index})">❌</button>
         `;
 
