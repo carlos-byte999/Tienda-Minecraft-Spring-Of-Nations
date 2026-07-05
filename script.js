@@ -53,7 +53,7 @@ function actualizarCarrito() {
     });
 
     document.getElementById("total").innerText =
-        "Total: " + total + " monedas";
+    "Total: " + total + " pesos fuertes";
 }
 
 function eliminar(index){
