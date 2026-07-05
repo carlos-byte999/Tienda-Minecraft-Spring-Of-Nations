@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Shop</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+
+<h1>⛏ Minecraft Shop</h1>
+
+<nav>
+
+<a href="#">Inicio</a>
+
+<a href="#">Minerales</a>
+
+<a href="#">Carrito</a>
+
+<a href="#" onclick="abrirPanel()">Admin</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h2>Compra minerales de Minecraft</h2>
+
+<p>La mejor tienda del servidor.</p>
+
+</section>
+
+<section class="productos">
+
+<div class="card">
+
+<img src="https://minecraft.wiki/images/Diamond_JE3_BE3.png">
+
+<h2>Diamante</h2>
+
+<p>5 pesos fuertes</p>
+
+<button onclick="comprar('Diamante',5)">Comprar</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://minecraft.wiki/images/Emerald_JE3_BE3.png">
+
+<h2>Esmeralda</h2>
+
+<p>2 pesos fuertes</p>
+
+<button onclick="comprar('Esmeralda',2)">Comprar</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://minecraft.wiki/images/Gold_Ingot_JE4_BE2.png">
+
+<h2>Oro</h2>
+
+<p>1 peso fuerte</p>
+
+<button onclick="comprar('Oro',1)">Comprar</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://minecraft.wiki/images/Iron_Ingot_JE3_BE2.png">
+
+<h2>Hierro</h2>
+
+<p>1 peso fuerte</p>
+
+<button onclick="comprar('Hierro',1)">Comprar</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://minecraftitemids.com/item/64/coal.png" alt="Carbón">
+
+<h2>Carbón</h2>
+
+<p>1 peso fuerte</p>
+
+<button onclick="comprar('Carbón',1)">Comprar</button>
+
+</div>
+
+</section>
+
+<section class="carrito">
+
+<h2>🛒 Carrito</h2>
+
+<ul id="listaCarrito"></ul>
+
+<h3 id="total">Total: 0 monedas</h3>
+
+<button onclick="vaciar()">Vaciar carrito</button>
+
+<button onclick="finalizar()">Finalizar compra</button>
+
+</section>
+
+<footer>
+
+<p>Minecraft Shop © 2026</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
